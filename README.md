@@ -28,13 +28,13 @@ weather-app/
 │    │     ├── WeatherCard.jsx
 
 🚀 Setup Instructions
-1. Clone the Repository
+1. Clone the Repository : 
 cd weather-app
 
-2. Install Dependencies
+2. Install Dependencies :
 npm install
 
-3. Run Development Server
+3. Run Development Server :
 npm run dev
 
 
