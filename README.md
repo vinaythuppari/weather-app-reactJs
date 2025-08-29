@@ -18,16 +18,6 @@ This app allows users to search for a city and view current weather details such
 
 ---
 
-## 🖼️ Demo Screenshots  
-
-### 🌍 Home Page  
-[Weather App Screenshot](weather-app/src/assets/openPage.png)  
-
-### 📱 Mobile View  
-![Mobile View](https://via.placeholder.com/300x500.png?text=Mobile+View)  
-
----
-
 ## 🛠️ Tech Stack  
 
 - **Frontend:** React, Material UI, Bootstrap 5  
@@ -41,26 +31,20 @@ This app allows users to search for a city and view current weather details such
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/vinaythuppari/weather-app-reactJs.git
    cd weather-app
-Install dependencies
-
-bash
-Copy code
+Install dependencies :
 npm install
-Start the development server
 
-bash
-Copy code
+Start the development server :
 npm run dev
-Open in your browser:
 
-arduino
-Copy code
+Open in your browser:
 http://localhost:5173
+
+
 ⚙️ Project Structure
-php
-Copy code
+
 weather-app/
 │── public/                # Static files
 │── src/
@@ -76,13 +60,9 @@ weather-app/
 🌐 API Usage
 Geocoding (City → Lat/Lon):
 
-pgsql
-Copy code
 https://geocoding-api.open-meteo.com/v1/search?name={city}
 Weather Forecast:
 
-bash
-Copy code
 https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true
 📌 Example
 Searching for London:
@@ -90,22 +70,18 @@ Searching for London:
 API fetches coordinates: latitude: 51.5072, longitude: -0.1276
 
 API fetches current weather:
-
-json
-Copy code
 {
   "temperature": 15.2,
   "windspeed": 12.3,
   "weathercode": 3
 }
-App displays:
 
-yaml
-Copy code
+App displays:
 🌤️ London, UK
 🌡️ 15°C
 💨 Wind: 12 km/h
 ☁️ Weather: Cloudy
+
 🚧 Improvements (Future Scope)
 🌎 Multi-language support
 
@@ -116,4 +92,4 @@ Copy code
 💾 Save favorite cities
 
 👨‍💻 Author
-Developed by 🔥D.R.E.A.M🔥
+Vinay
