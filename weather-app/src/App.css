@@ -1,5 +1,11 @@
+/* Accessible defaults */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
 body {
-  background: linear-gradient(to right, #6dd5fa, #2980b9);
-  font-family: "Roboto", sans-serif;
-  color: white;
+  margin: 0;
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  transition: background 400ms ease;
 }
+
+/* Improve contrast for inputs against bright bg */
+.MuiInputBase-root { background: #fff; }

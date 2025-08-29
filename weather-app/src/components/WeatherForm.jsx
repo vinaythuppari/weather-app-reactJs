@@ -1,30 +1,41 @@
 import React, { useState } from "react";
-import { TextField, Button } from "@mui/material";
+import { TextField, Button, Stack } from "@mui/material";
 
-function WeatherForm({ onSearch }) {
+export default function WeatherForm({ onSearch, disabled }) {
   const [city, setCity] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (city.trim() === "") return;
-    onSearch(city);
-    setCity("");
+    onSearch(city.trim());
   };
 
   return (
-    <form onSubmit={handleSubmit} className="d-flex justify-content-center mb-4">
-      <TextField
-        label="Enter city"
-        variant="outlined"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-        className="me-2"
-      />
-      <Button variant="contained" color="primary" type="submit">
-        Search
-      </Button>
+    <form onSubmit={handleSubmit} aria-label="Search weather by city">
+      <Stack
+        direction={{ xs: "column", sm: "row" }}
+        spacing={1.5}
+        justifyContent="center"
+        sx={{ mb: 3 }}
+      >
+        <TextField
+          label="Enter city"
+          variant="outlined"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          inputProps={{ "aria-label": "City name" }}
+          sx={{ bgcolor: "white", borderRadius: 2, minWidth: { xs: "100%", sm: 280 } }}
+        />
+        <Button
+          variant="contained"
+          color="primary"
+          type="submit"
+          disabled={disabled}
+          sx={{ borderRadius: 2, px: 3, fontWeight: 700 }}
+        >
+          Search
+        </Button>
+      </Stack>
     </form>
   );
 }
-
-export default WeatherForm;
