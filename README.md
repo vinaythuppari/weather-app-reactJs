@@ -21,7 +21,7 @@ This app allows users to search for a city and view current weather details such
 ## 🖼️ Demo Screenshots  
 
 ### 🌍 Home Page  
-![Weather App Screenshot](weather-app/src/assets/openPage.png)  
+[Weather App Screenshot](weather-app/src/assets/openPage.png)  
 
 ### 📱 Mobile View  
 ![Mobile View](https://via.placeholder.com/300x500.png?text=Mobile+View)  
