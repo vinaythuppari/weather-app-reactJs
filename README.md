@@ -4,6 +4,9 @@ A simple and modern **React Weather App** built using **React + Material UI + Bo
 
 This app allows users to search for a city and view current weather details such as **temperature, wind speed, and weather conditions** with dynamic visuals and responsive design.  
 
+![Weather App Home](weather-app/src/assets/openPage.png)
+
+
 ---
 
 ## 🚀 Features  
