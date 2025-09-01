@@ -12,7 +12,7 @@ import {
 import "./App.css";
 
 function themeForCode(code) {
-  // return background gradient + semantic name
+  // return background gradient
   if (code === 0) return { name: "sunny", gradient: "linear-gradient(135deg,#FFE259,#FFA751)" }; // yellow/orange
   if ([1, 2, 3, 45, 48].includes(code))
     return { name: "cloudy", gradient: "linear-gradient(135deg,#bdc3c7,#2c3e50)" }; // grey

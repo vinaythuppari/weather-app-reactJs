@@ -8,7 +8,7 @@ import AcUnitIcon from "@mui/icons-material/AcUnit";
 import WaterDropIcon from "@mui/icons-material/WaterDrop";
 
 function pickIcon(code) {
-  // Open-Meteo weather code groups (simplified)
+  // Open-Meteo weather code groups 
   if (code === 0) return <WbSunnyIcon fontSize="large" />;
   if ([1, 2, 3].includes(code)) return <CloudIcon fontSize="large" />;
   if ([45, 48].includes(code)) return <CloudIcon fontSize="large" />;
