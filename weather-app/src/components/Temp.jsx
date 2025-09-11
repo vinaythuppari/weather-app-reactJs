@@ -7,3 +7,10 @@ const Temp = () => {
 }
 
 export default Temp
+
+const Temp2 = () => {
+  return (
+    <div>Temp</div>
+  )
+}
+
